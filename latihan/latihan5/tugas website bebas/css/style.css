@@ -1,0 +1,212 @@
+body{
+    font: 18px/36px 'arial';   
+    background-size: cover;
+    
+   }
+   
+   h1{
+       margin-top: 50px;
+       font-size: 80px;
+       margin: 50px 0;
+       color: whitesmoke;
+       text-align: center;
+       text-shadow: 1px 1px 2px black ;
+       
+   }
+   /* ------CONTAINER-------- */
+   .container{
+       
+       width: 60%;
+       padding: 15px;
+       border-radius: 20px;
+       margin: auto;
+       margin-bottom: 100px;
+      
+       
+   }
+  
+ 
+   /* ----------------------- */
+   
+   /* --------BUTTON---------- */
+   .btn{
+   font-size: 20px;  
+   text-decoration: none;
+   display: inline-block;
+   color: white;
+   border: 1px solid transparent;
+   }
+
+   .btn:hover{
+     background: transparent;
+     color: black;
+     border-color: transparent;
+   }
+
+   #btn-close:hover{
+       background: transparent;
+       color: white;
+       border-color: transparent;
+     }
+
+     .next{
+     
+       background-color: #00165e;
+       color: #ddd;
+       text-decoration: none;
+       padding: 10px 20px 10px 20px;
+       border-radius: 5px;
+    }
+    .back{
+        
+        background-color: rgb(56, 56, 56);
+        color: #ddd;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        margin-left: 65%;
+        
+    }
+    .next:hover,.back:hover,.close:hover{
+       background-color: transparent;
+       
+    }
+    .close{
+       position: absolute;
+       top: 130px;
+       margin-left: 450px;
+       text-decoration: none;
+       color: white;
+      background-color: rgb(156, 2, 2);
+      padding: 10px;
+      border-radius: 5px;
+       line-height: 25px;
+       
+   }
+   
+     /* -------------------------------- */
+   
+   
+     /* ------------CARD antariksa---------- */
+    .luar{
+        background: linear-gradient(rgba(255, 255, 255, 0.4),rgba(161, 159, 159, 0.4));  
+        border-radius: 30px;
+    }
+     .antariksa{
+       position: relative;
+      display: inline-block;
+      width: 170px;
+      padding: 20px;
+     
+     }
+     .antariksa img{
+      
+         width: 150px;
+       box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .5);
+       border-radius: 20px;
+   }
+   .planet{
+
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 30px;
+    
+   }
+    
+   .antariksa:hover .planet{
+       opacity: .3;
+   }
+     
+   .antariksa:hover .angkasa {
+       opacity: 1;
+     }
+   
+   .angkasa {
+       transition: .5s ease;
+       opacity: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);    
+     }
+/* ---------------- Dalem nya---------------- */
+   .overlay{
+       width: 0;
+       height: 0;
+       overflow: hidden;
+       position: fixed;
+       top: 0;
+       left: 0;
+       background-color: rgba(0, 0, 0, 0);
+       transition: 1s;
+       z-index: 99999;
+       text-align: center;
+   }
+   .overlay:target{
+       width: auto;
+       height: auto;
+       bottom: 0;
+       right: 0;
+       background-color: rgba(0, 0, 0, .7);
+   }
+   
+   .overlay img{
+       margin-left: -40%;
+        max-height: 100%;
+        width: 30%;
+        width: 25%;
+        margin-top: 6%;
+       box-shadow:  2px 2px 7px rgba(0,0,0,.5);
+   
+   }
+    .penjelasan{
+      margin-top: -30%;
+       text-align: right;
+       width: 50%;
+       margin-left: 38%;
+    }
+    .penjelasan h2{
+        font-size: 50px;
+    }
+   span,h2{
+    
+   text-align: left;
+       color: aliceblue;
+    
+      padding-left: 10%;
+       margin-top: -300px;
+   }
+   .overlay p{
+       text-align: left;
+    margin-left: 10%;
+    margin-top: 0;
+    padding-right: 10px;
+   }
+   .overlay:target img,span,.back,.next,.close{
+       animation: galaxy 1.1s;
+   }
+   
+   /* -------------Animasi--------------- */
+   
+   @keyframes galaxy {
+   0% {
+      
+       opacity: 0;
+   
+   }
+   100% {
+      
+       opacity: 1;
+   }
+   }
+   
+   
+   @keyframes tombol{
+       0%{
+           opacity: 0;
+       }
+       100%{
+           opacity: 1;
+       }
+   }
